@@ -1,0 +1,11 @@
+flask
+flask-sqlalchemy
+flask-login
+flask-wtf
+flask-bcrypt
+gunicorn
+pytest
+pre-commit
+yapf
+isort
+requests
