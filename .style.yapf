@@ -1,0 +1,3 @@
+[style]
+based_on_style = pep8
+each_dict_entry_on_separate_line = true
