@@ -62,6 +62,8 @@ Server will be running at port 5000
 
 ### Option 1: CURL
 
+Obs: I'm using curl on the following examples, however it should work with any tool that can make POST requests.
+
 On the first initialization of the server the db has no users. Once the first user is registered that user will be the admin. Only the admin is allowed to register new users and all users registered are allowed to access the api endpoints with their respective credentials.
 
 To register the admin make a POST request to the api url. If running locally it will be http://127.0.0.1:5000/register. The POST's body needs to have the following keys: "new_username", "new_password".
@@ -137,7 +139,24 @@ parameters: {
 
 ### Option 2: easy_use.py
 
-I've made a simple script that helps interacting with the api. To run it just use:
+I've made a simple script that helps interacting with the api.
+
+If not created already create a new virtual enviroment:
+```
+python3 -m venv env
+```
+
+Activate enviroment:
+```
+source env/bin/activate
+```
+
+Install project dependencies on the enviroment:
+```
+python3 -m pip install -r requirements.txt 
+```
+
+To run the script just use:
 ```
 python3 easy_use.py
 ```
